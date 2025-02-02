@@ -1,24 +1,24 @@
-# mi-portafolio
+# Mi Portfolio
 
-## Project setup
-```
-npm install
-```
+Este repositorio contiene mi portfolio personal, el cual está desplegado utilizando GitHub Pages.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## ¿Qué es GitHub Pages?
 
-### Compiles and minifies for production
-```
-npm run build
-```
+GitHub Pages es un servicio gratuito de hosting para sitios web estáticos que ofrece GitHub. Permite publicar y alojar tu sitio web directamente desde un repositorio, sin necesidad de configurar servidores adicionales. Es ideal para portfolios, blogs, documentación y proyectos personales.
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Características
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- **Gratuito:** No tienes que pagar por el hosting.
+- **Fácil de usar:** Solo necesitas subir los archivos estáticos de tu sitio.
+- **Integrado con GitHub:** Se actualiza automáticamente cuando haces cambios en el repositorio.
+
+## Contribuciones
+
+Si deseas mejorar este proyecto, no dudes en abrir issues o enviar pull requests.
+
+## Licencia
+
+Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo LICENSE para más información.
+
+
+
