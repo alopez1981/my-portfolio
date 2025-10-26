@@ -42,22 +42,22 @@ export default {
           title: "Gestión de Divisas",
           description:
             "API en Laravel para manejar conversiones de moneda. Respetando principios SOLID, CQRS y DDD",
-          link: "https://github.com/alopez1981/currency.git",
+          link: "https://github.com/alopez1981/currencies-ddd-cqrs",
           image: "https://s",
         },
         {
           id: 2,
-          title: "Analizador de Datos",
+          title: "Ejemplo de la arquitectura CQRS",
           description:
-            "Script en Python para procesamiento de grandes volúmenes de datos.",
-          link: "#",
+            "El objetivo es mostrar cómo separar la lógica de escritura (Commands) de la de lectura (Queries), logrando un código más limpio, mantenible y fácil de escalar.",
+          link: "https://github.com/alopez1981/cqrs-bank-laravel",
           image: "https://source.unsplash.com/400x300/?data,analysis",
         },
         {
           id: 3,
           title: "Gestión de empleados",
           description: "Aplicación web en PHP para gestión de trabajadores.",
-          link: "https://github.com/alopez1981/gestion-empleados.git",
+          link: "https://github.com/alopez1981/GestionTrabajadores",
           image: "https://source.unsplash.com/400x300/?invoice,technology",
         },
       ],
