@@ -1,44 +1,44 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">
-    <nav
-      class="fixed top-0 left-0 w-full bg-gray-800 bg-opacity-80 backdrop-blur-md shadow-md p-4 flex justify-around z-50"
-    >
-      <router-link to="/" class="nav-link">Inicio</router-link>
-      <router-link to="/projects" class="nav-link">Proyectos</router-link>
-      <router-link to="/about" class="nav-link">Sobre Mí</router-link>
-      <router-link to="/contact" class="nav-link">Contacto</router-link>
-    </nav>
+  <a href="#main-content" class="skip-link">{{ t("nav.skipToContent") }}</a>
 
-    <div class="pt-20">
+  <div class="flex min-h-screen flex-col bg-white font-sans text-ink">
+    <NavBar />
+
+    <main id="main-content" tabindex="-1" class="flex-1 pt-20">
       <router-view />
-    </div>
+    </main>
+
+    <SiteFooter />
   </div>
 </template>
 
-<script>
-export default {
-  name: "App",
-};
+<script setup>
+import { useI18n } from "vue-i18n";
+import NavBar from "@/components/NavBar.vue";
+import SiteFooter from "@/components/SiteFooter.vue";
+
+const { t } = useI18n();
 </script>
 
 <style>
-.nav-link {
-  @apply text-white text-lg font-semibold tracking-wide hover:text-blue-400 transition duration-300 relative;
-}
-
-.nav-link::after {
-  content: "";
+.skip-link {
   position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 100%;
-  height: 2px;
-  background: #3b82f6;
-  transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  background: #0052ff;
+  color: #ffffff;
+  padding: 0.75rem 1.25rem;
+  font-weight: 700;
+  font-size: 0.9rem;
 }
 
-.nav-link:hover::after {
-  transform: scaleX(1);
+.skip-link:focus {
+  left: 0;
+}
+
+:focus-visible {
+  outline: 2px solid #0052ff;
+  outline-offset: 2px;
 }
 </style>

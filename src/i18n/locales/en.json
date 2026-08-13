@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "titleSuffix": "Albert López | Technical Project Management"
+  },
+  "nav": {
+    "mainLabel": "Main navigation",
+    "home": "Home",
+    "about": "About",
+    "capabilities": "Capabilities",
+    "caseStudies": "Case Studies",
+    "journey": "Journey",
+    "stack": "Tech Stack",
+    "contact": "Contact",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "skipToContent": "Skip to main content"
+  },
+  "hero": {
+    "title": "Technical Project Management",
+    "subtitle": "Business Systems · Infrastructure · Security · Software Engineering",
+    "valueProp": "I connect engineering, product and operations to turn complex technical initiatives into structured, secure and deliverable systems.",
+    "ctaCaseStudies": "View case studies",
+    "ctaContact": "Contact me"
+  },
+  "home": {
+    "capabilitiesTitle": "Core capabilities",
+    "capabilitiesIntro": "Ten years of hands-on operations, business systems and software engineering, applied to structuring and delivering technical work.",
+    "capabilitiesCta": "See all capabilities",
+    "caseStudiesTitle": "Featured case studies",
+    "caseStudiesIntro": "A closer look at how I structure delivery, identity systems and incident response.",
+    "journeyTitle": "Professional journey",
+    "journeyIntro": "From frontline operations to backend development and IT security coordination.",
+    "journeyCta": "See full journey",
+    "stackTitle": "Technologies and tools",
+    "stackCta": "See full stack",
+    "contactTitle": "Let's talk",
+    "contactIntro": "Open to Technical Project/Program Management, Engineering & Platform Operations, Business Systems and IT & Security Operations roles."
+  },
+  "about": {
+    "title": "About / Professional profile",
+    "photoAlt": "Portrait photo of Albert López",
+    "intro": "I sit at the intersection of business operations, software engineering and IT systems.",
+    "paragraph1": "Over ten years inside a multi-site organization gave me first-hand knowledge of how operations, business goals and day-to-day constraints actually work — knowledge I now use to scope and coordinate technical initiatives realistically instead of abstractly.",
+    "paragraph2": "In parallel, I've built and maintained backend systems with PHP and Laravel, supported operational continuity with Vue, and taken on Business Systems and IT & Security Operations work: identity and access management, Google Workspace / JumpCloud / 1Password administration, security procedures, and incident coordination.",
+    "paragraph3": "I use Jira to break down and estimate technical initiatives, and I work asynchronously with RabbitMQ-based processes and CircleCI pipelines — enough hands-on exposure to speak the same language as engineering, without presenting myself as a specialist architect.",
+    "paragraph4": "What I bring to a Technical Project/Program Management or Engineering & Platform Operations role is the ability to translate between technology, product, operations and leadership, and to turn that translation into structured, secure, deliverable work.",
+    "positioningLabel": "Target positioning",
+    "positioningText": "Technical Project Management · Business Systems, Infrastructure & Security · Software Engineering"
+  },
+  "capabilitiesPage": {
+    "title": "Core capabilities",
+    "intro": "Eight areas where business knowledge, systems administration and software engineering come together."
+  },
+  "caseStudiesPage": {
+    "title": "Featured case studies",
+    "intro": "Three initiatives that illustrate how I approach delivery structure, identity systems and incident response. Some are still in progress — status is shown on each card.",
+    "viewCaseStudy": "View case study"
+  },
+  "caseStudyDetail": {
+    "back": "Back to case studies",
+    "problem": "Problem",
+    "context": "Context",
+    "objectives": "Objectives",
+    "myRole": "My role",
+    "stakeholders": "Stakeholders",
+    "architecture": "Architecture",
+    "milestones": "Milestones",
+    "dependencies": "Dependencies",
+    "risks": "Risks",
+    "technicalDecisions": "Technical decisions",
+    "deliveryStrategy": "Delivery strategy",
+    "metrics": "Metrics and success criteria",
+    "lessonsLearned": "Lessons learned",
+    "repository": "Repository",
+    "demo": "Demo",
+    "notProvidedYet": "Not published yet",
+    "notFoundTitle": "Case study not found",
+    "notFoundBody": "This case study doesn't exist or was moved.",
+    "metricsPending": "Metrics will be published once this initiative reaches the Available stage."
+  },
+  "status": {
+    "planned": "Planned",
+    "in_progress": "In progress",
+    "available": "Available"
+  },
+  "journeyPage": {
+    "title": "Professional journey",
+    "intro": "The path from frontline operations to systems, security and software engineering. Each entry distinguishes the actual role held from how it translates into today's positioning.",
+    "positioningLabel": "How it translates today"
+  },
+  "stackPage": {
+    "title": "Technologies and tools",
+    "intro": "Grouped by area — engineering, delivery, business systems, infrastructure and security. Depth varies by group, from hands-on development to operational administration."
+  },
+  "contactPage": {
+    "title": "Contact",
+    "intro": "The fastest ways to reach me:",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "linkedinPlaceholder": "LinkedIn URL — pending",
+    "githubPlaceholder": "GitHub URL — pending",
+    "formNote": "Prefer email or LinkedIn — no contact form here yet."
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "socialLabel": "Social and contact links"
+  },
+  "stats": {
+    "capabilities": "Core capability areas",
+    "caseStudies": "Active lab projects",
+    "journeyStops": "Career milestones",
+    "years": "Years of operational experience"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "es": "Español"
+  }
+}

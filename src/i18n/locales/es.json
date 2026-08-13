@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "titleSuffix": "Albert López | Technical Project Management"
+  },
+  "nav": {
+    "mainLabel": "Navegación principal",
+    "home": "Inicio",
+    "about": "Perfil",
+    "capabilities": "Capacidades",
+    "caseStudies": "Casos de estudio",
+    "journey": "Trayectoria",
+    "stack": "Tecnologías",
+    "contact": "Contacto",
+    "menuOpen": "Abrir menú",
+    "menuClose": "Cerrar menú",
+    "skipToContent": "Saltar al contenido principal"
+  },
+  "hero": {
+    "title": "Technical Project Management",
+    "subtitle": "Business Systems · Infrastructure · Security · Software Engineering",
+    "valueProp": "Conecto ingeniería, producto y operaciones para convertir iniciativas técnicas complejas en sistemas estructurados, seguros y entregables.",
+    "ctaCaseStudies": "Ver casos de estudio",
+    "ctaContact": "Contactar"
+  },
+  "home": {
+    "capabilitiesTitle": "Capacidades principales",
+    "capabilitiesIntro": "Diez años de operaciones, sistemas de negocio e ingeniería de software aplicados a estructurar y entregar trabajo técnico.",
+    "capabilitiesCta": "Ver todas las capacidades",
+    "caseStudiesTitle": "Casos de estudio destacados",
+    "caseStudiesIntro": "Cómo estructuro la entrega de proyectos, los sistemas de identidad y la respuesta a incidentes.",
+    "journeyTitle": "Trayectoria profesional",
+    "journeyIntro": "De la operativa de primera línea al desarrollo backend y la coordinación de seguridad IT.",
+    "journeyCta": "Ver trayectoria completa",
+    "stackTitle": "Tecnologías y herramientas",
+    "stackCta": "Ver todo el stack",
+    "contactTitle": "Hablemos",
+    "contactIntro": "Abierto a puestos de Technical Project/Program Management, Engineering & Platform Operations, Business Systems e IT & Security Operations."
+  },
+  "about": {
+    "title": "Perfil profesional",
+    "photoAlt": "Foto de retrato de Albert López",
+    "intro": "Estoy en la intersección entre operaciones de negocio, ingeniería de software y sistemas IT.",
+    "paragraph1": "Más de diez años dentro de una organización multisede me han dado conocimiento directo de cómo funcionan realmente las operaciones, los objetivos de negocio y las limitaciones del día a día; ese conocimiento es el que uso hoy para dimensionar y coordinar iniciativas técnicas de forma realista, no abstracta.",
+    "paragraph2": "En paralelo, he construido y mantenido sistemas backend con PHP y Laravel, he dado soporte de continuidad operativa con Vue, y he asumido tareas de Business Systems e IT & Security Operations: gestión de identidad y accesos, administración de Google Workspace / JumpCloud / 1Password, procedimientos de seguridad y coordinación de incidentes.",
+    "paragraph3": "Utilizo Jira para desglosar y estimar iniciativas técnicas, y trabajo con procesos asíncronos basados en RabbitMQ y pipelines de CircleCI: suficiente exposición práctica como para hablar el mismo idioma que ingeniería, sin presentarme como arquitecto especialista.",
+    "paragraph4": "Lo que aporto a un rol de Technical Project/Program Management o Engineering & Platform Operations es la capacidad de traducir entre tecnología, producto, operaciones y dirección, y convertir esa traducción en trabajo estructurado, seguro y entregable.",
+    "positioningLabel": "Posicionamiento objetivo",
+    "positioningText": "Technical Project Management · Business Systems, Infrastructure & Security · Software Engineering"
+  },
+  "capabilitiesPage": {
+    "title": "Capacidades principales",
+    "intro": "Ocho áreas donde se combinan el conocimiento de negocio, la administración de sistemas y la ingeniería de software."
+  },
+  "caseStudiesPage": {
+    "title": "Casos de estudio destacados",
+    "intro": "Tres iniciativas que muestran cómo abordo la estructura de entrega, los sistemas de identidad y la respuesta a incidentes. Algunas siguen en desarrollo: el estado se indica en cada tarjeta.",
+    "viewCaseStudy": "Ver caso de estudio"
+  },
+  "caseStudyDetail": {
+    "back": "Volver a casos de estudio",
+    "problem": "Problema",
+    "context": "Contexto",
+    "objectives": "Objetivos",
+    "myRole": "Mi rol",
+    "stakeholders": "Stakeholders",
+    "architecture": "Arquitectura",
+    "milestones": "Hitos",
+    "dependencies": "Dependencias",
+    "risks": "Riesgos",
+    "technicalDecisions": "Decisiones técnicas",
+    "deliveryStrategy": "Estrategia de entrega",
+    "metrics": "Métricas y criterios de éxito",
+    "lessonsLearned": "Lecciones aprendidas",
+    "repository": "Repositorio",
+    "demo": "Demo",
+    "notProvidedYet": "Aún no publicado",
+    "notFoundTitle": "Caso de estudio no encontrado",
+    "notFoundBody": "Este caso de estudio no existe o se ha movido.",
+    "metricsPending": "Las métricas se publicarán cuando esta iniciativa alcance el estado Available."
+  },
+  "status": {
+    "planned": "Planificado",
+    "in_progress": "En desarrollo",
+    "available": "Disponible"
+  },
+  "journeyPage": {
+    "title": "Trayectoria profesional",
+    "intro": "El camino desde la operativa de primera línea hasta sistemas, seguridad e ingeniería de software. Cada etapa distingue el cargo real ocupado de cómo se traduce en el posicionamiento actual.",
+    "positioningLabel": "Cómo se traduce hoy"
+  },
+  "stackPage": {
+    "title": "Tecnologías y herramientas",
+    "intro": "Agrupadas por área: ingeniería, entrega, sistemas de negocio, infraestructura y seguridad. La profundidad varía según el grupo, desde desarrollo práctico hasta administración operativa."
+  },
+  "contactPage": {
+    "title": "Contacto",
+    "intro": "Las formas más rápidas de contactarme:",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "linkedinPlaceholder": "URL de LinkedIn — pendiente",
+    "githubPlaceholder": "URL de GitHub — pendiente",
+    "formNote": "Prefiero email o LinkedIn — todavía no hay formulario de contacto."
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "socialLabel": "Enlaces de contacto y redes"
+  },
+  "stats": {
+    "capabilities": "Áreas de capacidad principal",
+    "caseStudies": "Proyectos de laboratorio activos",
+    "journeyStops": "Hitos de trayectoria",
+    "years": "Años de experiencia operativa"
+  },
+  "language": {
+    "label": "Idioma",
+    "en": "English",
+    "es": "Español"
+  }
+}

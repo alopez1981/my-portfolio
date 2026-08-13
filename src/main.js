@@ -1,6 +1,9 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import router from "./router"; 
-import "./assets/main.css"; 
+import router from "./router";
+import i18n from "./i18n";
+import "./assets/main.css";
 
-createApp(App).use(router).mount("#app");
+document.documentElement.setAttribute("lang", i18n.global.locale.value);
+
+createApp(App).use(router).use(i18n).mount("#app");

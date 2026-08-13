@@ -1,3 +1,60 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  background-color: #ffffff;
+}
+
+body {
+  @apply bg-white text-ink;
+  font-feature-settings: "kern";
+}
+
+::selection {
+  background-color: #0052ff;
+  color: #ffffff;
+}
+
+@keyframes aurora-drift {
+  0%,
+  100% {
+    transform: translate3d(-10%, -5%, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(10%, 5%, 0) scale(1.15);
+  }
+}
+
+.aurora-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+.aurora-bg::before,
+.aurora-bg::after {
+  content: "";
+  position: absolute;
+  width: 140%;
+  height: 140%;
+  top: -20%;
+  left: -20%;
+  background: radial-gradient(circle at 30% 30%, rgba(0, 82, 255, 0.55), transparent 60%),
+    radial-gradient(circle at 70% 60%, rgba(0, 82, 255, 0.35), transparent 55%);
+  animation: aurora-drift 16s ease-in-out infinite;
+  filter: blur(40px);
+}
+
+.aurora-bg::after {
+  animation-duration: 22s;
+  animation-direction: reverse;
+  opacity: 0.6;
+}
+
+.halftone-bg {
+  background-color: #0052ff;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.35) 1px, transparent 1.5px);
+  background-size: 14px 14px;
+}
