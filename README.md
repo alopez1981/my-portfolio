@@ -32,7 +32,7 @@ Built with Vue 3 and Tailwind CSS, fully bilingual (English default, Spanish ava
 | i18n | vue-i18n (English default, Spanish) |
 | Testing | Vitest, @vue/test-utils |
 | Tooling | Vue CLI, ESLint, Prettier |
-| Deployment | GitHub Pages (`gh-pages`) |
+| Deployment | GitHub Pages via GitHub Actions (`gh-pages`) |
 
 ## Getting started
 
@@ -80,9 +80,13 @@ Dark hero with an animated gradient, `#0052FF` as the single accent color, bold 
 
 ## Deployment
 
-The production build targets GitHub Pages under `/my-portfolio/` (see `publicPath` in `vue.config.js`). Run `npm run build && npm run deploy` to publish `dist/` to the `gh-pages` branch.
+Every push to `main` triggers [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml): it installs dependencies, runs lint and tests, builds the app, and publishes `dist/` to the `gh-pages` branch — `git push` is the only step needed. Run it manually from the Actions tab (`workflow_dispatch`) if you ever need to redeploy without a new commit.
 
-Two details make this work under a sub-path with client-side routing: the router reads `process.env.BASE_URL` so it strips the `/my-portfolio/` prefix correctly, and a `postbuild` step copies `index.html` to `404.html` so GitHub Pages serves the app (instead of its own 404 page) for any deep link.
+To deploy from a local machine instead, run `npm run build && npm run deploy`, which does the same publish step via the `gh-pages` package.
+
+The production build targets GitHub Pages under `/my-portfolio/` (see `publicPath` in `vue.config.js`). Two details make this work under a sub-path with client-side routing: the router reads `process.env.BASE_URL` so it strips the `/my-portfolio/` prefix correctly, and a `postbuild` step copies `index.html` to `404.html` so GitHub Pages serves the app (instead of its own 404 page) for any deep link.
+
+If the workflow's deploy step fails with a permissions error, go to **Settings → Actions → General → Workflow permissions** and enable **Read and write permissions** for the repository.
 
 ## License
 
