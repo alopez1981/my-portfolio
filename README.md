@@ -82,6 +82,8 @@ Dark hero with an animated gradient, `#0052FF` as the single accent color, bold 
 
 The production build targets GitHub Pages under `/my-portfolio/` (see `publicPath` in `vue.config.js`). Run `npm run build && npm run deploy` to publish `dist/` to the `gh-pages` branch.
 
+Two details make this work under a sub-path with client-side routing: the router reads `process.env.BASE_URL` so it strips the `/my-portfolio/` prefix correctly, and a `postbuild` step copies `index.html` to `404.html` so GitHub Pages serves the app (instead of its own 404 page) for any deep link.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).

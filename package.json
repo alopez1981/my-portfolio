@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "postbuild": "cp dist/index.html dist/404.html",
     "deploy": "gh-pages -d dist",
     "test": "vitest run",
     "test:watch": "vitest",
