@@ -21,12 +21,18 @@
       <CtaButton :href="project.repositoryUrl" variant="outline">{{
         t("caseStudyDetail.repository")
       }}</CtaButton>
-      <CtaButton :href="project.demoUrl" variant="outline">{{
-        t("caseStudyDetail.demo")
-      }}</CtaButton>
+      <CtaButton
+        v-if="project.demoUrl || !project.demoNote"
+        :href="project.demoUrl"
+        variant="outline"
+        >{{ t("caseStudyDetail.demo") }}</CtaButton
+      >
     </div>
+    <p v-if="project.demoNote" class="mt-2 max-w-2xl text-sm text-ink-soft">
+      {{ localize(project.demoNote, locale) }}
+    </p>
     <p
-      v-if="!project.repositoryUrl || !project.demoUrl"
+      v-else-if="!project.repositoryUrl || !project.demoUrl"
       class="mt-2 text-sm font-bold uppercase tracking-wide text-ink-faint"
     >
       {{ t("caseStudyDetail.notProvidedYet") }}

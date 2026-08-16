@@ -100,6 +100,10 @@ export const projects = [
     lessonsLearned: null,
     repositoryUrl: "https://github.com/alopez1981/Sass-Platform-Delivery-Lab",
     demoUrl: null,
+    demoNote: {
+      en: "No live demo by design: the backend and frontend are easy to keep running, but RabbitMQ is hard to keep healthy unattended, and this isn't worth monitoring in production for a portfolio piece. The repository's README covers running it locally and includes screenshots of it working.",
+      es: "Sin demo en producción, de forma deliberada: el backend y el frontend son fáciles de mantener corriendo, pero RabbitMQ es difícil de mantener sano sin supervisión, y no compensa monitorizarlo en producción para una pieza de portfolio. El README del repositorio explica cómo levantarlo en local e incluye capturas de su funcionamiento.",
+    },
   },
   {
     slug: "identity-lifecycle-orchestrator",
