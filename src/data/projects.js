@@ -17,68 +17,84 @@ export const projects = [
       es: "Un laboratorio autodirigido para practicar cómo convertir una idea de funcionalidad SaaS en un plan de entrega estructurado y trazable.",
     },
     problem: {
-      en: "SaaS teams often lose delivery predictability when technical scope isn't broken down early enough for engineering, product and leadership to plan around it.",
-      es: "Los equipos SaaS suelen perder previsibilidad de entrega cuando el alcance técnico no se desglosa lo bastante pronto para que ingeniería, producto y dirección puedan planificar en torno a él.",
+      en: "SaaS teams often lose delivery predictability when technical scope — especially architecture decisions with security implications, like tenant isolation — isn't broken down and documented early enough for engineering, product and leadership to plan and audit around it.",
+      es: "Los equipos SaaS suelen perder previsibilidad de entrega cuando el alcance técnico —especialmente decisiones de arquitectura con implicaciones de seguridad, como el aislamiento entre clientes— no se desglosa ni se documenta lo bastante pronto para que ingeniería, producto y dirección puedan planificar y auditar en torno a él.",
     },
     context: {
-      en: "A personal lab project (not tied to any employer) used to practice the delivery-management side of a Technical Project Manager role: backlog breakdown, estimation, dependency mapping and milestone tracking, applied to a small SaaS feature set.",
-      es: "Un proyecto personal de laboratorio (sin vínculo con ningún empleador) para practicar la parte de gestión de entrega de un rol de Technical Project Manager: desglose de backlog, estimación, mapeo de dependencias y seguimiento de hitos, aplicado a un conjunto reducido de funcionalidades SaaS.",
+      en: "A personal lab project (not tied to any employer) used to practice, end to end, both the technical implementation and the delivery management of a real multi-tenant SaaS platform: architecture, security, observability and management documentation, built together rather than separately.",
+      es: "Un proyecto personal de laboratorio (sin vínculo con ningún empleador) para practicar, de extremo a extremo, tanto la implementación técnica como la gestión de entrega de una plataforma SaaS multi-tenant real: arquitectura, seguridad, observabilidad y documentación de gestión, construidas juntas en vez de por separado.",
     },
     objectives: {
       en: [
-        "Turn a rough product idea into a structured backlog with estimated, dependency-aware tickets in Jira.",
-        "Maintain a visible delivery plan with milestones that non-technical stakeholders can follow.",
-        "Keep a running technical-decisions log explaining trade-offs in plain language.",
+        "Build a working multi-tenant SaaS platform (Laravel + Vue + MySQL + RabbitMQ, in Docker) with cross-organization isolation proven by adversarial tests, not just documented as intent.",
+        "Keep a traceable delivery plan directly in the repository (docs/: scope, milestones, dependencies, risks), without depending on an external management tool.",
+        "Keep a running technical-decisions log (ADR) explaining the trade-offs evaluated, including the real bugs that came up and how they were fixed.",
       ],
       es: [
-        "Convertir una idea de producto poco definida en un backlog estructurado con tickets estimados y con dependencias en Jira.",
-        "Mantener un plan de entrega visible con hitos que stakeholders no técnicos puedan seguir.",
-        "Mantener un registro de decisiones técnicas explicando los trade-offs en lenguaje sencillo.",
+        "Construir una plataforma SaaS multi-tenant funcional (Laravel + Vue + MySQL + RabbitMQ, en Docker) con aislamiento entre organizaciones probado con tests adversariales, no solo documentado como intención.",
+        "Mantener un plan de entrega trazable directamente en el repositorio (docs/: alcance, hitos, dependencias, riesgos), sin depender de una herramienta externa de gestión.",
+        "Mantener un registro de decisiones técnicas (ADR) explicando los trade-offs evaluados, incluyendo los bugs reales que aparecieron y cómo se corrigieron.",
       ],
     },
     myRole: {
-      en: "Technical Project Manager and delivery lead (self-directed lab).",
-      es: "Technical Project Manager y responsable de entrega (laboratorio autodirigido).",
+      en: "Software Architect, Platform Engineer and Technical Project Manager (self-directed lab, one person covering all three roles).",
+      es: "Software Architect, Platform Engineer y Technical Project Manager (laboratorio autodirigido, un único rol ejerciendo los tres).",
     },
     stakeholders: {
-      en: ["Personal lab project — no external stakeholders yet."],
+      en: [
+        "Personal lab project — no real external stakeholders. Five simulated stakeholders and a RACI matrix are documented (docs/stakeholder-map.md) to practice how responsibilities would be split on a real team.",
+      ],
       es: [
-        "Proyecto personal de laboratorio — todavía sin stakeholders externos.",
+        "Proyecto personal de laboratorio — sin stakeholders externos reales. Se documentan 5 stakeholders simulados y una matriz RACI (docs/stakeholder-map.md) para practicar cómo se repartirían las responsabilidades en un equipo real.",
       ],
     },
     architecture: {
-      en: "Pending — will be documented once implementation starts.",
-      es: "Pendiente — se documentará cuando comience la implementación.",
+      en: "Decoupled backend (Laravel 12 API) and frontend (Vue 3 + TypeScript SPA), session-based authentication with Laravel Sanctum. MySQL as a shared database with row-level multi-tenant isolation (automatic Global Scope, verified by tests). RabbitMQ for real asynchronous notifications, consumed by an independent worker. Nginx + PHP-FPM, all running in Docker Compose. Full detail and diagrams in docs/architecture.md and docs/adr/.",
+      es: "Backend (Laravel 12 API) y frontend (Vue 3 + TypeScript SPA) desacoplados, autenticación por sesión con Laravel Sanctum. MySQL como base de datos compartida con aislamiento multi-tenant por fila (Global Scope automático + tests que lo verifican). RabbitMQ para notificaciones asíncronas reales, consumidas por un worker independiente. Nginx + PHP-FPM, todo en Docker Compose. Detalle completo y diagramas en docs/architecture.md y docs/adr/.",
     },
     milestones: {
       en: [
-        "Scope and backlog breakdown",
-        "Architecture decision log",
-        "MVP delivery",
-        "Retrospective",
+        "Architecture and structure",
+        "First functional vertical flow (domain, auth, API + SPA, real asynchronous notification)",
+        "Security and error cases (adversarial tests, feature flags, health checks, dashboard)",
+        "Delivery management documentation",
+        "Tests and final presentation (in progress)",
       ],
       es: [
-        "Desglose de alcance y backlog",
-        "Registro de decisiones de arquitectura",
-        "Entrega del MVP",
-        "Retrospectiva",
+        "Arquitectura y estructura",
+        "Primer flujo vertical funcional (dominio, auth, API + SPA, notificación asíncrona real)",
+        "Seguridad y casos de error (tests adversariales, feature flags, health checks, dashboard)",
+        "Documentación de gestión de entrega",
+        "Tests y presentación final (en curso)",
       ],
     },
     dependencies: {
-      en: ["Pending — to be defined during scoping."],
-      es: ["Pendiente — se definirá durante el dimensionamiento."],
+      en: [
+        "Technical: Laravel/PHP, Vue/Vite, MySQL, RabbitMQ, Docker. Sequential: each milestone depends on the previous one — writing security tests against a flow that doesn't exist yet, or documenting delivery management before there are real decisions to log, wouldn't make sense. Detail in docs/dependencies.md.",
+      ],
+      es: [
+        "Técnicas: Laravel/PHP, Vue/Vite, MySQL, RabbitMQ, Docker. De secuencia: cada hito depende del anterior (no tiene sentido escribir tests de seguridad sobre un flujo que aún no existe, ni documentar la gestión antes de tener decisiones reales que registrar). Detalle en docs/dependencies.md.",
+      ],
     },
     risks: {
-      en: ["Pending — to be defined during scoping."],
-      es: ["Pendiente — se definirá durante el dimensionamiento."],
+      en: [
+        "Logged with probability, impact, mitigation and owner in docs/risk-register.md — including three that actually materialized during the build and are documented as such, not just as hypotheticals: an infinite recursion on authentication (architecture bug), a dev-environment network lockout that blocked visual verification, and a RabbitMQ misconfiguration that silently dropped messages. All three were diagnosed and fixed.",
+      ],
+      es: [
+        "Registrados con probabilidad, impacto, mitigación y propietario en docs/risk-register.md — incluyendo tres que se materializaron de verdad durante la construcción y quedaron documentados como tal, no solo como hipótesis: una recursión infinita al autenticar (bug de arquitectura), un bloqueo de red del entorno de desarrollo que impedía verificar visualmente, y una configuración incorrecta de RabbitMQ que perdía mensajes en silencio. Los tres se diagnosticaron y corrigieron.",
+      ],
     },
     technicalDecisions: {
-      en: ["Pending — will be logged as decisions are made."],
-      es: ["Pendiente — se registrará a medida que se tomen decisiones."],
+      en: [
+        "4 ADRs on record: stack selection based on the available environment, decoupled API and SPA (with stateful SPA Sanctum), row-isolation multi-tenancy strategy (amended to document the recursion bug and its fix), and Nginx + PHP-FPM instead of PHP's built-in development server. See docs/adr/.",
+      ],
+      es: [
+        "4 ADR registrados: selección de stack según el entorno disponible, API y SPA desacopladas (con Sanctum SPA-stateful), estrategia de multi-tenancy por aislamiento de fila (con una enmienda documentando el bug de recursión y su corrección), y Nginx+PHP-FPM en lugar del servidor de desarrollo integrado de PHP. Ver docs/adr/.",
+      ],
     },
     deliveryStrategy: {
-      en: "Pending — will follow an incremental, milestone-based delivery approach.",
-      es: "Pendiente — seguirá un enfoque de entrega incremental basado en hitos.",
+      en: "Delivery by vertical milestones: each one leaves the system runnable and verified end to end (never half-done), with tests, lint and build green before closing it out. Deploying to a free-tier provider (Render + CloudAMQP + Clever Cloud) was evaluated and consciously ruled out — the decision is documented as a judgment exercise (docs/deployment-runbook.md, docs/rollback-plan.md), not executed, because for a portfolio piece a repo that's reproducible in 2 minutes with Docker is more reliable than a free deployment that falls asleep.",
+      es: "Entrega por hitos verticales: cada uno deja el sistema arrancable y verificado de extremo a extremo (nunca a medias), con tests, lint y build en verde antes de cerrarlo. Se evaluó desplegar a un proveedor gratuito (Render + CloudAMQP + Clever Cloud) y se decidió conscientemente no hacerlo — la estrategia queda documentada como ejercicio de criterio (docs/deployment-runbook.md, docs/rollback-plan.md), no ejecutada, porque para una pieza de portfolio un repo reproducible en 2 minutos con Docker es más fiable que un despliegue gratuito que se duerme.",
     },
     metrics: null,
     lessonsLearned: null,
