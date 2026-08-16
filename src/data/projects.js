@@ -11,7 +11,7 @@ export const projects = [
       en: "SaaS Platform Delivery Lab",
       es: "SaaS Platform Delivery Lab",
     },
-    status: PROJECT_STATUS.PLANNED,
+    status: PROJECT_STATUS.IN_PROGRESS,
     summary: {
       en: "A self-directed lab to practice turning a rough SaaS feature idea into a structured, trackable delivery plan.",
       es: "Un laboratorio autodirigido para practicar cómo convertir una idea de funcionalidad SaaS en un plan de entrega estructurado y trazable.",
@@ -82,7 +82,7 @@ export const projects = [
     },
     metrics: null,
     lessonsLearned: null,
-    repositoryUrl: null,
+    repositoryUrl: "https://github.com/alopez1981/Sass-Platform-Delivery-Lab",
     demoUrl: null,
   },
   {
